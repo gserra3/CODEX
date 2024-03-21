@@ -1,0 +1,10 @@
+[
+  {
+    "br": "plant",
+    "resource": ["fungi","fungi","animal"],
+    "point": 1,
+
+    "seed": "fungi"
+
+  }
+]

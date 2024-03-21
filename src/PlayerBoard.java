@@ -1,10 +1,9 @@
+import cards.Card;
+
 import java.util.ArrayList;
 
 abstract class PlayerBoard {
-    private Card starter;
-    private ArrayList<Card>resource;
-    private Card gold;
-    private Card objective;
+
     private int point=0;
     private int plant=0;
     private int animal=0;
@@ -12,20 +11,25 @@ abstract class PlayerBoard {
     private int insect=0;
     private int potion=0;
     private int feather=0;
+    private ArrayList<Card>cards;
+    private Card objective;
+    private ArrayList<Card>root;
 
+    //--- Aggiungi carta
+    public void place (Card card){
+        if(controllo(card))
+            cards.remove(card);
 
-
-
-
-    //--- da vedere
-    public void init(Card card){
-        starter = card;
     }
-    public int getPoint(){
-        return point;
+    private boolean controllo(Card card){
+        if(root.isEmpty())
+            root.add(card);
+
+        return true;
+
     }
 
-    //--- Aggiungi carta in un angolo
+
 
 
 }

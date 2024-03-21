@@ -1,0 +1,49 @@
+gold.json
+[
+    {
+        "tr": "string",
+        "tl": "string",
+        "br": "string",
+        "bl": "string",
+
+        "resource": ["","",""],
+        "point": int,
+        "seed": "string"
+    },
+
+        ...
+]
+
+objective.json
+[
+    {
+        "id": int,
+        "point": int
+    }
+
+    ...
+]
+
+resource.json
+[
+    {
+        "tr": "string",
+        "tl": "string",
+        "br": "string",
+        "bl": "string",
+    },
+
+        ...
+]
+
+starter.json
+[
+    {
+        "tr": "string",
+        "tl": "string",
+        "br": "string",
+        "bl": "string",
+    },
+
+        ...
+]
